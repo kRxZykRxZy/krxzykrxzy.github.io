@@ -152,7 +152,7 @@
 
         async function fetchMessages() {
             try {
-                const res = await fetch('https://api.jsonbin.io/v3/b/67c73db1e41b4d34e4a0bfb1/latest', {
+                const res = await fetch('https://corsproxy.io/?url=https://api.jsonbin.io/v3/b/67c73db1e41b4d34e4a0bfb1/latest', {
                     method: 'GET'
                 });
                 const data = await res.json();
@@ -165,7 +165,7 @@
 
         async function saveMessages() {
             try {
-                const res = await fetch('https://api.jsonbin.io/v3/b/67c73db1e41b4d34e4a0bfb1', {
+                const res = await fetch('https://corsproxy.io/?url=https://api.jsonbin.io/v3/b/67c73db1e41b4d34e4a0bfb1', {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json'
